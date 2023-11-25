@@ -1,0 +1,23 @@
+@keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0px rgba(208, 251, 225, 0.4), 0 0 0 0px rgba(255, 255, 255, 0),
+                 0 0 0 0px rgba(208, 251, 225, 0.4), 0 0 0 0px rgba(255, 255, 255, 0),
+                 0 0 0 0px rgba(208, 251, 225, 0.4), 0 0 0 0px rgba(255, 255, 255, 0),
+                 0 0 0 0px rgba(208, 251, 225, 0.4), 0 0 0 0px rgba(255, 255, 255, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 15px rgba(208, 251, 225, 0.4), 0 0 0 17px rgba(255, 255, 255, 0),
+                 0 0 0 40px rgba(208, 251, 225, 0.4), 0 0 0 42px rgba(255, 255, 255, 0),
+                 0 0 0 70px rgba(208, 251, 225, 0.4), 0 0 0 72px rgba(255, 255, 255, 0),
+                 0 0 0 105px rgba(208, 251, 225, 0.4), 0 0 0 107px rgba(255, 255, 255, 0);
+    }
+  }
+  
+  .rippleAnimation {
+    animation: ripple 1000ms infinite;
+    background-color: #3CC585;
+  }
+  
+  .rippleAnimation:hover {
+    background-color: #347054; /* Darker shade when hovered */
+  }
